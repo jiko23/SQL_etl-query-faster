@@ -60,9 +60,9 @@ class Table_Queries:
 	def _index_dict(self):
 
 
-		for i in self.data[0:20].sku.unique():
+		for i in self.data.sku.unique():
 
-			_index_list = self.data[0:20].index[self.data[0:20]["sku"] == i].tolist()
+			_index_list = self.data.index[self.data["sku"] == i].tolist()
 
 			self._index[i] = _index_list
 
@@ -177,14 +177,14 @@ class Table_Queries:
 
 		self._cursor.close()
 
-		return 'success!!!'
+		return 'success3!!!'
 
 
 
 
 if __name__ == '__main__':
 
-	data_link = 'E:\prog\products.csv' #Original data to be send to file
+	data_link = 'E:\prog\products.csv' #Original data to be send to sql table
 
 	updated_data_link = 'E:\prog\products1.csv' #updated data
 
@@ -204,7 +204,5 @@ if __name__ == '__main__':
 	print(_call._index_dict())
 
 	print(_call.update_query(updated_data_link, aggregated_data_link))
-			
-	#print(_call.aggregate_query())
 		
 		
