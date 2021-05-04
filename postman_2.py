@@ -190,7 +190,7 @@ if __name__ == '__main__':
 
 	aggregated_data_link = 'E:\prog\products2.csv' #aggregated data
 
-	conn = pyodbc.connect('Driver={SQL Server};' 'Server=WINDOWS-ASIROT3\SQLEXPRESS;' 'Database=JAYANTA;' 'Trusted_Connection=yes;')
+	conn = pyodbc.connect('Driver={SQL Server};' 'Server=WINDOWS-ASIROT3\SQLEXPRESS;' 'Database=JAYANTA;' 'Trusted_Connection=yes;') #Kindly change with your details.
 
 	cursor = conn.cursor()
 
