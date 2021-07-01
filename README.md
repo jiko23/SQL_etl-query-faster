@@ -1,8 +1,4 @@
-# Postman_Assignment
-Assignment for Postman
-
-Concept :
-To complete the assignment the concept designed is a bit different. The following steps has been performed:
+The following steps has been performed:
 
 1> The first thing is to insert large data into sql table within very less time. In the program the function 'table_creation(data)' does the work. In the function it will first check if the table is already present or not. If already present then it will drop the table and then create the 'Product' table in sql database. This code has the capability to put a huge amount of data i.e. .csv file into the database table too fast.
 
@@ -15,5 +11,5 @@ To complete the assignment the concept designed is a bit different. The followin
 
 This whole program has been done programatically using Python. In starting I thought that it will be difficult to do such thing using program mainly the updation process and bulk data insertion but after research I could achieve it. My concept is different because normally people will perform to insert or update the records in batches but I wanted to program something different and with totally different concept. For storing the indices of the records I first tried HashMap data structure but it was still taking lots of time as the data was large later I switched to dictionary which is also like HashTable. If I was given some more time then I would have focused on how to make the indices storing faster with any other data structure. Again I want to conclude that I tried my best to program my concept and perform the task and I could achieve atleast 95% of it except the indices storing and I would love to improve it. (Kindly change the locations mentioned in the program as per your need.)
 
-Renning the program:
+Running the program:
 Just run this program i.e. python postman_2.py and keep the original data file in the same location as the program and give locations to all other files the same as the program file.
